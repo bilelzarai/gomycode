@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="F3.css">
+</head>
+<body>
+<table>
+    <tr>
+        <th>Product</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Qty</th>
+        <th>SubTotal</th>
+        <th>Delete</th>
+    </tr>
+    <tr id="row">
+        <td>
+            <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy,c_fill,g_auto/e725107a3d7041389f94ab220123fbcb_9366/Bravada_Shoes_Black_FV8085_01_standard.jpg" alt="">
+        </td>
+        <td>Adidas Shoe</td>
+        <td><span id="price">60</span>DT</td>
+        <td style="display: flex;">
+            <button id="plus">+</button>
+            <p id="qty">0</p>
+            <button id="minus">-</button>
+        </td>
+        <td ><span id="subtotal">0</span>DT</td>
+        <td><button id="delete">Delete</button></td>
+    </tr>
+</table>
+    <script src="F3.js"></script>
+</body>
+</html>
