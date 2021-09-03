@@ -1,0 +1,33 @@
+ALGORITHM CheckpointLinearData Structure //Problem 1, Solution 1
+VAR
+   htab,hExplanation,htab1     : HASH_TABLE<INTEGER,INTEGER>;
+
+maxtab,maxtab1,sum,i,j,e,x,n:INTEGER;
+
+BEGIN
+sum:=0;
+e:=0;
+Read(maxtab);
+Read(maxtab1);
+
+  FOR i FROM 0 TO maxhtab-1 STEP 1  DO
+    Read (x);
+    htab.insert(i,x);
+
+    FOR j FROM 0 TO maxhtab1-1  STEP 1  DO    
+        Read (n);
+        htab.insert(j,n);
+
+          IF (    htab.get(i)==  htab1.get(j)) THEN
+           sum=sum+htab.get(i)+ htab1.get(j);
+           hExplanation.insert(e,htab.get(i));
+           e++;
+          END_IF
+    END_FOR  
+  END_FOR 
+
+write ('somme est : '+sum);
+FOR e FROM 0 TO e STEP 1  DO
+hExplanation.get(e);
+END_FOR 
+END

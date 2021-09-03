@@ -1,0 +1,28 @@
+ALGORITHM CheckpointLinearData Structure //Problem 1, Solution 1
+VAR
+   tab,Explanation,tab1 : ARRAY_OF INTEGER[];
+maxtab,maxtab1,sum,i,j,e:INTEGER;
+
+BEGIN
+sum:=0;
+e:=0;
+Read(maxtab);
+Read(maxtab1);
+
+  FOR i FROM 0 TO maxtab-1 STEP 1  DO
+   Read(tab[i]);
+    FOR j FROM 0 TO maxtab1-1  STEP 1  DO    
+       Read(tab1[j]);
+
+        IF (tab[i]==tab1[j]) THEN
+         sum=sum+tab[i]+tab1[j];
+        Explanation[e]:=tab[i];
+        e++;
+        END_IF
+    END_FOR  
+END_FOR 
+write ('somme est : '+sum);
+FOR e FROM 0 TO Explanation.length STEP 1  DO
+    write Explanation[e];
+END_FOR 
+END
