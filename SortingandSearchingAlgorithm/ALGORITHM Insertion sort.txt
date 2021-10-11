@@ -1,0 +1,20 @@
+ALGORITHM Insertion sort
+VAR
+    tab  : ARRAY_OF INTEGER [];
+     i , j , n, aux : INTEGER;
+
+BEGIN
+    FOR i FROM 2 TO N DO
+        aux := Tab[ i ] 
+        j := i ;  
+          
+           while Tab[ j-1 ] > aux DO
+            Tab[ j ]  := Tab[ j-1 ]; 
+             j:= j-1;    
+           END_while
+
+        Tab[ j ]  := v 
+    END_FOR 
+
+   
+END
