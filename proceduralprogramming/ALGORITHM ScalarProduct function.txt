@@ -1,24 +1,21 @@
 
-ALGORITHM ScalarProduct
+ALGORITHM Insertion sort
 VAR
-    PS : FLOAT := 0;
-    IR : ARRAY_OF FLOAT [][];
-    V1 , V2 : ARRAY_OF FLOAT [];
-    N , n1 , n2 : INTEGER;
-    i,j : INTEGER;
+    tab  : ARRAY_OF INTEGER [];
+     i , j , n, aux : INTEGER;
 
 BEGIN
-    Read (N);
-    Read(V1);
-    Read(V2);
-    Read(n1);
-    Read(n2);
+    FOR i FROM 2 TO N DO
+        aux := Tab[ i ] 
+        j := i ;  
+          
+           while Tab[ j-1 ] > aux DO
+            Tab[ j ]  := Tab[ j-1 ]; 
+             j:= j-1;    
+           END_while
 
-    
+        Tab[ j ]  := v 
+    END_FOR 
 
-  
-    PS := dot_product(PS , V1 , V2);
-    IF (PS = 0) THEN
-        Write (V1,"and",V2,"are orthogonal")
-    END_IF
+   
 END
