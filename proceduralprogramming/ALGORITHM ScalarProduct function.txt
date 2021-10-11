@@ -22,14 +22,3 @@ PS := 0;
         Write (V1,"and",V2,"are orthogonal")
     END_IF
 END
-FUNCTION dot_product(VAR PS: FLOAT , arr1 , arr2 : ARRAY_OF FLOAT) : FLOAT
-VAR
-    i : INTEGER;
-BEGIN
-    FOR i FROM 0 TO arr1.length -1  DO
-    FOR i FROM 0 TO arr2.length -1 Do
-        PS := PS + (arr1[i]*arr2[i]);
-    END_FOR
-    END_FOR
-    RETURN PS ; 
-END
