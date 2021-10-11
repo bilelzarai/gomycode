@@ -1,0 +1,8 @@
+PROCEDURE dot_product(VAR PS: FLOAT ; arr1 , arr2 : ARRAY_OF FLOAT)
+VAR
+    i,j : INTEGER;
+BEGIN
+    FOR i FROM 0 TO arr1.length -1  DO
+        PS := PS + (arr1[i]*arr2[i]);
+    END_FOR
+END

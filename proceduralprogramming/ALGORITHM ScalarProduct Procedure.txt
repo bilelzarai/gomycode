@@ -1,0 +1,24 @@
+ALGORITHM ScalarProduct
+VAR
+    IR : ARRAY_OF FLOAT [][];
+    V1 , V2 : ARRAY_OF FLOAT [];
+    i,j ,N , n1 , n2 : INTEGER;
+    PS : FLOAT := 0;
+
+BEGIN
+Read(N);
+
+      FOR i FROM 0 TO N-1 DO
+        Read (V1[i]);
+        Read (V2[i]);
+       
+     END_FOR
+
+    dot_product(PS , V1 , V2);
+
+    IF (PS = 0) THEN
+        Write (V1,"and",V2,"are orthogonal")
+    END_IF
+END
+
+
