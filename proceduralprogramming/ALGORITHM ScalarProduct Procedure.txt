@@ -1,8 +1,8 @@
 ALGORITHM ScalarProduct
 VAR
-    IR : ARRAY_OF FLOAT [][];
+  
     V1 , V2 : ARRAY_OF FLOAT [];
-    i,j ,N , n1 , n2 : INTEGER;
+    i,j ,N : INTEGER;
     PS : FLOAT := 0;
 
 BEGIN
